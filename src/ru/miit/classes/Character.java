@@ -8,6 +8,70 @@ public abstract class Character implements GameObject {
     private int level;
     private Number specialPoints;
     private String hashedPassword;
+    private int Strength = 5;
+    private int Constitution = 5;
+    private int Dexterity = 5;
+    private int Intelligence = 5;
+    private int Wisdom = 5;
+    private int Charisma = 5;
+
+    public int getLucky() {
+        return Lucky;
+    }
+
+    public void setLucky(int lucky) {
+        Lucky = lucky;
+    }
+
+    private int Lucky = 1;
+
+    public int getStrength() {
+        return Strength;
+    }
+
+    public void setStrength(int strength) {
+        Strength = strength;
+    }
+
+    public int getConstitution() {
+        return Constitution;
+    }
+
+    public void setConstitution(int constitution) {
+        Constitution = constitution;
+    }
+
+    public int getDexterity() {
+        return Dexterity;
+    }
+
+    public void setDexterity(int dexterity) {
+        Dexterity = dexterity;
+    }
+
+    public int getIntelligence() {
+        return Intelligence;
+    }
+
+    public void setIntelligence(int intelligence) {
+        Intelligence = intelligence;
+    }
+
+    public int getWisdom() {
+        return Wisdom;
+    }
+
+    public void setWisdom(int wisdom) {
+        Wisdom = wisdom;
+    }
+
+    public int getCharisma() {
+        return Charisma;
+    }
+
+    public void setCharisma(int charisma) {
+        Charisma = charisma;
+    }
 
     public Character(String username, String characterType, int level, Number specialPoints) {
         this.username = username;
@@ -63,4 +127,6 @@ public abstract class Character implements GameObject {
     }
 
     public abstract String toString();
+    public abstract void levelUp();
+
 }
