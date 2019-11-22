@@ -10,7 +10,10 @@ public class Main {
         Archangel archangel = new Archangel("null_player", 55, 10);
 
         System.out.println(demon.toString());
+        System.out.println(demon.getMagicDamage());
         System.out.println(archangel.toString());
+        System.out.println(archangel.getPhysicalDamage());
+
 	// write your code here
     }
 }
