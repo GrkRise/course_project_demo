@@ -14,6 +14,16 @@ public abstract class Character implements GameObject {
     private int Intelligence = 5;
     private int Wisdom = 5;
     private int Charisma = 5;
+    private int Lucky = 1;
+    private int clanID;
+
+    public int getClanID() {
+        return clanID;
+    }
+
+    public void setClanID(int clanID) {
+        this.clanID = clanID;
+    }
 
     public int getLucky() {
         return Lucky;
@@ -23,7 +33,7 @@ public abstract class Character implements GameObject {
         Lucky = lucky;
     }
 
-    private int Lucky = 1;
+
 
     public int getStrength() {
         return Strength;
