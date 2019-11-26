@@ -18,10 +18,14 @@ public class Main {
         Archangel archangel_0 = new Archangel("null_player", 55, 10);
         Demon demon_1 = new Demon("paxan", 11, 22.2);
         Archangel archangel_1 = new Archangel("nerd", 89, 15);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter database password: ");
+        String pass = scanner.nextLine().trim();
 
         Properties properties = new Properties();
         properties.setProperty("user", "root");
-        properties.setProperty("password", "qwe7770683asd");
+        properties.setProperty("password", pass);
 
         Controller controller = new Controller(properties);
 
@@ -30,7 +34,7 @@ public class Main {
         Clan angels = new Clan("Angels");
 
 
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println("1. Insert to DB table Clan");
         System.out.println("2. Insert to DB table Heroes");
         System.out.println("3. Delete from DB table Clan");
